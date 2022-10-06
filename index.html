@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+
+    <title>RkComercio :: Página Principal</title>
+</head>
+
+<body>
+    <div class="d-flex flex-column wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success border-bottom shadow-sm mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="/"><b>RkComercio</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/index.html">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <div class="align-self-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="/cadastro.html" class="nav-link text-white">Quero Me Cadastrar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/login.html" class="nav-link text-white">Entrar</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="badge rounded-pill bg-light text-success position-absolute ms-4 mt-0"
+                                    title="5 produto(s) no carrinho"><small>5</small></span>
+                                <a href="/carrinho.html" class="nav-link text-white">
+                                    <i class="bi-cart" style="font-size:24px;line-height:24px;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div id="carouselMain" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="/imgprodutos/slides/WhatsApp Image 2022-10-02 at 12.46.30.jpeg" class="d-none d-md-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="/imgprodutos/slides/slide1.jpg" class="d-none d-md-block w-100" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+            <hr class="mt-3">
+        </div>
+
+        <main class="flex-fill">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <form class="justify-content-center justify-content-md-start mb-3 mb-md-0">
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" placeholder="Digite aqui o que procura">
+                                <button class="btn btn-success">Buscar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                            <form class="d-inline-block">
+                                <select class="form-select form-select-sm">
+                                    <option>Ordenar pelo nome</option>
+                                    <option>Ordenar pelo menor preço</option>
+                                    <option>Ordenar pelo maior preço</option>
+                                </select>
+                            </form>
+                            <nav class="d-inline-block me-3">
+                                <ul class="pagination pagination-sm my-0">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">6</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <hr mt-3>
+
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-success">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <a href="/produto.html">
+                                <img src="imgprodutos/imagens/cimento.jpg" class="card-img-top">
+                            </a>
+                            <div class="card-header">
+                                R$ 2,59/unidade à vista
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cimento CPII 1kg Argos</h5>
+                                <p class="card-text truncar-3l">
+                                Cimento CPII Argos de extrema qualidade.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-success mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Em estoque!</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-success">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="imgprodutos/imagens/tijolo.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 2,13/unidade à vista
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Tijolo</h5>
+                                <p class="card-text truncar-3l">
+                                    Tijolo vermelho da melhor qualidade possível e com cantos redondos.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-success mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Em estoque!</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-success">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="/imgprodutos/imagens/caboflexivelmm.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 40,90/unidade à vista
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cabo Flexível 1,5mm² 750V Classe 5</h5>
+                                <p class="card-text truncar-3l">
+                                    Cabo Flexível de ótima qualidade para te auxiliar nas obras.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-light disabled mt-2 d-block">
+                                    <small>Reabastecendo Estoque</small>
+                                </a>
+                                <small class="text-success">
+                                    <b>Produto Esgotado!</b>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-success">
+                                <i class="bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="imgprodutos/imagens/caixadeferramentas.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 31,90/unidade à vista
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Caixa de Ferramentas 43,5 x 24 São Bernardo</h5>
+                                <p class="card-text truncar-3l">
+                                    Caixa de ferramentas de extrema qualidade para te o máximo de organização.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-success mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Em estoque!</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-success">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="/imgprodutos/imagens/adesivocompound.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 57,90/unidade à vista
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Adesivo Estruturante Compound 1kg</h5>
+                                <p class="card-text truncar-3l">
+                                    Adesivo Estruturante de ótima qualidade, te dando confiança no produto.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-success mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Em estoque!</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-success">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="/imgprodutos/imagens/colaparamolduras.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 39,90/unidade à vista
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cola para molduras P.U Base D'água 1kg</h5>
+                                <p class="card-text truncar-3l">
+                                    Cola de extrema qualidade para te auxiliar a colar as lindas peças e molduras.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-success mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Em estoque!</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-success">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="/imgprodutos/imagens/eledrodutocorrugado.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 31,99/unidade à vista
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Eletroduto Corrugado 1'' 32mm Amarelo Rolo com 10m</h5>
+                                <p class="card-text truncar-3l">
+                                    A solução ideal para instalações elétricas com caminhos serpentinos que requerem alto grau de flexibilidade em eletrodutos sem perda de massa e resistência.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-success mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Em estoque!</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-success">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="/imgprodutos/imagens/furadeira.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 219,90/unidade à vista
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Furadeira de impacto Black&Decker 560W TM555-B2 220V</h5>
+                                <p class="card-text truncar-3l">
+                                    Imprescindíveis para a instalação de equipamentos que vão desde redes hidráulicas e elétricas até móveis e acabamentos em edifícios, as furadeiras, como o próprio nome sugere, são utilizadas para fazer furos em superfícies.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-success mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Em estoque!</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-success">
+                                <i class="bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="/imgprodutos/imagens/fechadura.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 329,99/unidade à vista
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Fechadura Elétrica C90 Dupla Com Botão Cinza</h5>
+                                <p class="card-text truncar-3l">
+                                    Garanta sua segurança e conforto com essa indispensável fechadura C90.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="carrinho.html" class="btn btn-success mt-2 d-block">
+                                    Adicionar ao Carrinho
+                                </a>
+                                <small class="text-success">Em estoque!</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2 text-success">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <img src="/imgprodutos/imagens/tintaacrilica.jpg" class="card-img-top">
+                            <div class="card-header">
+                                R$ 67,40/unidade à vista
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Tinta Econômica Acrílica Fosco Coralar Branco 3,6L Coral</h5>
+                                <p class="card-text truncar-3l">
+                                    Tinta Acrilica Fosca de ótima cobertura. Ideal para trabalhos de artesanato e pinturas diversas.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-light disabled mt-2 d-block">
+                                    <small>Reabastecendo Estoque</small>
+                                </a>
+                                <small class="text-success">
+                                    <b>Produto Esgotado!</b>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-3">
+
+                <div class="row pb-3">
+                    <div class="col-12">
+                        <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                            <form class="d-inline-block">
+                                <select class="form-select form-select-sm">
+                                    <option>Ordenar pelo nome</option>
+                                    <option>Ordenar pelo menor preço</option>
+                                    <option>Ordenar pelo maior preço</option>
+                                </select>
+                            </form>
+                            <nav class="d-inline-block me-3">
+                                <ul class="pagination pagination-sm my-0">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">6</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+      
+        <footer class="border-top text-muted bg-light">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-12 col-md-4 text-center">
+                        &copy; 2022 - RkComercio<br>
+                        Av. da Liberdade, 532 - Liberdade, São Paulo - SP, 01502-001<br>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="/privacidade.html" class="text-decoration-none text-dark">
+                            Política de Privacidade
+                        </a><br>
+                        <a href="/termos.html" class="text-decoration-none text-dark">
+                            Termos de Uso
+                        </a><br>
+                        <a href="/quemsomos.html" class="text-decoration-none text-dark">
+                            Quem Somos
+                        </a><br>
+                        <a href="/trocas.html" class="text-decoration-none text-dark">
+                            Trocas e Devoluções
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="/contato.html" class="text-decoration-none text-dark">
+                            Contato pelo Site
+                        </a><br>
+                        E-mail: <a href="mailto:email@rkcomercio.fecap.br" class="text-decoration-none text-dark">
+                            email@rkcomercio.fecap.br
+                        </a><br>
+                        Telefone: <a href="phone:11999990000" class="text-decoration-none text-dark">
+                            (11) 99999-9999
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
